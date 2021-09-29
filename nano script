@@ -1,0 +1,11 @@
+#this part of the script iterates a for loop through example.txt
+for n in $(cat example.txt)
+do
+	echo "this next variable is $n"
+done
+
+#this part of the script searched for poly A in Sars COV2 
+echo "searching for poly A's in SARS COV2 fasta"
+grep 'AAAA' NC_045512.fa
+echo "search is complete"
+
